@@ -18,6 +18,8 @@ public class WeatherCsv {
 
     private ArrayList<WeatherData> weatherData = new ArrayList<>();
 
+//Reading in a csv file and saving the data to an ArrayList
+
     public WeatherCsv() throws IOException {
         try (
                 Reader reader = Files.newBufferedReader(Paths.get("Average-Weather-Data.csv"));

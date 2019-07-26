@@ -14,6 +14,8 @@ public class ScheduleCsv {
 
     private ArrayList<ScheduleData> scheduleData = new ArrayList<>();
 
+//Reading in a csv file and saving the data to an ArrayList
+
     public ScheduleCsv() throws IOException {
         try (
                 Reader reader = Files.newBufferedReader(Paths.get("Bat-Schedule.csv"));

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class DisplayMenu {
     public static int DisplayMenu() {
+        //Display a menu for the user and capture the user's input for later use
         System.out.println("----------------------------");
         System.out.println("Louisville Bats weather data");
         System.out.println("----------------------------");

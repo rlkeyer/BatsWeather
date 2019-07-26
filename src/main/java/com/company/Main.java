@@ -30,6 +30,7 @@ public class Main {
 
                 int index = 0;
 
+                //Create the header for a table for displaying data
                 String leftAlignFormat = "| %-10s | %-5s | %-13s | %-5s | %-5s |%n";
 
                 System.out.format("+------------+-------+---------------+-------+-------+%n");
@@ -42,6 +43,7 @@ public class Main {
                     String high = weatherData.get(index).getHigh();
                     String low = weatherData.get(index).getLow();
 
+                    //Add the data to the new object and format the data to display in a table
                     BatWeather fullData = new BatWeather(date, time, opponent, high, low);
                     batWeather.add(fullData);
                     System.out.format(leftAlignFormat, batWeather.get(index).getDate(), batWeather.get(index).getTime(), batWeather.get(index).getOpponent(), batWeather.get(index).getHigh(), batWeather.get(index).getLow());
